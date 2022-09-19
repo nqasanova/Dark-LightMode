@@ -21,16 +21,16 @@ function ReceiveChangeNumber(){
     var changedNumber = receivedValue.slice(-3, -2);
     var groupNumber = document.getElementById('groupText');
 
-    if (changedNumber == 3) {
-        groupNumber.innerHTML = `Your group is an Evening group.`
+    if (changedNumber == 1) {
+        groupNumber.innerHTML = `<span style = 'color: yellow;'>${receivedValue}</span> is a Morning group.`
     }
 
     else if (changedNumber == 2) {
-        groupNumber.innerHTML = `Your group is an Afternoon group.`
+        groupNumber.innerHTML = `<span style = 'color: red;'>${receivedValue}</span> is an Afternoon group.`
     }
 
-    else if (changedNumber == 1) {
-        groupNumber.innerHTML = `Your group is a Morning group.`
+    else if (changedNumber == 3) {
+        groupNumber.innerHTML = `<span style = 'color: black;'>${receivedValue}</span> is an Evening group.`
     }
 
     else {
